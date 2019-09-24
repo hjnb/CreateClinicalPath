@@ -1,0 +1,16 @@
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\bin\Release\CreateClinicalPath.exe
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\bin\Release\CreateClinicalPath.pdb
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\bin\Release\CreateClinicalPath.xml
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.Resources.resources
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.vbproj.GenerateResource.Cache
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.exe
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.xml
+C:\Users\yoshi\AppData\Local\Temporary Projects\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.pdb
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.exe
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.xml
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.pdb
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\bin\Release\CreateClinicalPath.exe
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\bin\Release\CreateClinicalPath.pdb
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\bin\Release\CreateClinicalPath.xml
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.Resources.resources
+C:\Users\yoshi\documents\visual studio 2010\Projects\CreateClinicalPath\CreateClinicalPath\obj\x86\Release\CreateClinicalPath.vbproj.GenerateResource.Cache
