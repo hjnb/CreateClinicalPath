@@ -37,14 +37,29 @@ Partial Class TopForm
         Me.byo1TextBox = New System.Windows.Forms.TextBox()
         Me.byo2TextBox = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.fileNameBox = New System.Windows.Forms.TextBox()
-        Me.saveDirPathBox = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.temp2Box = New System.Windows.Forms.TextBox()
+        Me.temp1Box = New System.Windows.Forms.TextBox()
+        Me.tempNumBox = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.btnReference = New System.Windows.Forms.Button()
+        Me.formatTextBox = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.hyoukaBox = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.adlBox = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.saveDirPathBox = New System.Windows.Forms.TextBox()
+        Me.fileNameBox = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.namBox = New System.Windows.Forms.TextBox()
+        Me.btnCreateExcelFile = New System.Windows.Forms.Button()
         CType(Me.dgvPatientList, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvText, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -175,20 +190,37 @@ Partial Class TopForm
         '
         'byo1TextBox
         '
-        Me.byo1TextBox.Location = New System.Drawing.Point(96, 93)
+        Me.byo1TextBox.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.byo1TextBox.Location = New System.Drawing.Point(96, 118)
         Me.byo1TextBox.Name = "byo1TextBox"
         Me.byo1TextBox.Size = New System.Drawing.Size(398, 19)
         Me.byo1TextBox.TabIndex = 12
         '
         'byo2TextBox
         '
-        Me.byo2TextBox.Location = New System.Drawing.Point(96, 111)
+        Me.byo2TextBox.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.byo2TextBox.Location = New System.Drawing.Point(96, 136)
         Me.byo2TextBox.Name = "byo2TextBox"
         Me.byo2TextBox.Size = New System.Drawing.Size(398, 19)
         Me.byo2TextBox.TabIndex = 13
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnCreateExcelFile)
+        Me.GroupBox2.Controls.Add(Me.namBox)
+        Me.GroupBox2.Controls.Add(Me.Label17)
+        Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.Controls.Add(Me.temp2Box)
+        Me.GroupBox2.Controls.Add(Me.temp1Box)
+        Me.GroupBox2.Controls.Add(Me.tempNumBox)
+        Me.GroupBox2.Controls.Add(Me.Label15)
+        Me.GroupBox2.Controls.Add(Me.Label14)
+        Me.GroupBox2.Controls.Add(Me.btnReference)
+        Me.GroupBox2.Controls.Add(Me.formatTextBox)
+        Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Controls.Add(Me.hyoukaBox)
+        Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.adlBox)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label9)
@@ -201,79 +233,213 @@ Partial Class TopForm
         Me.GroupBox2.Controls.Add(Me.byo1TextBox)
         Me.GroupBox2.Location = New System.Drawing.Point(126, 221)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(510, 284)
+        Me.GroupBox2.Size = New System.Drawing.Size(510, 352)
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "入院診療計画書エクセル作成用"
+        Me.GroupBox2.Text = "計画書エクセル作成用"
         '
-        'Label6
+        'temp2Box
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(19, 35)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 12)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "ファイル名"
+        Me.temp2Box.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.temp2Box.Location = New System.Drawing.Point(96, 242)
+        Me.temp2Box.Name = "temp2Box"
+        Me.temp2Box.Size = New System.Drawing.Size(352, 19)
+        Me.temp2Box.TabIndex = 31
         '
-        'Label7
+        'temp1Box
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(6, 65)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 12)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "保存先フォルダ"
+        Me.temp1Box.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.temp1Box.Location = New System.Drawing.Point(96, 224)
+        Me.temp1Box.Name = "temp1Box"
+        Me.temp1Box.Size = New System.Drawing.Size(352, 19)
+        Me.temp1Box.TabIndex = 30
         '
-        'fileNameBox
+        'tempNumBox
         '
-        Me.fileNameBox.Location = New System.Drawing.Point(96, 32)
-        Me.fileNameBox.Name = "fileNameBox"
-        Me.fileNameBox.ReadOnly = True
-        Me.fileNameBox.Size = New System.Drawing.Size(116, 19)
-        Me.fileNameBox.TabIndex = 15
+        Me.tempNumBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.tempNumBox.FormattingEnabled = True
+        Me.tempNumBox.Items.AddRange(New Object() {"", "1", "2", "3", "4", "5"})
+        Me.tempNumBox.Location = New System.Drawing.Point(252, 196)
+        Me.tempNumBox.Name = "tempNumBox"
+        Me.tempNumBox.Size = New System.Drawing.Size(32, 20)
+        Me.tempNumBox.TabIndex = 29
         '
-        'saveDirPathBox
+        'Label15
         '
-        Me.saveDirPathBox.Location = New System.Drawing.Point(96, 62)
-        Me.saveDirPathBox.Name = "saveDirPathBox"
-        Me.saveDirPathBox.ReadOnly = True
-        Me.saveDirPathBox.Size = New System.Drawing.Size(296, 19)
-        Me.saveDirPathBox.TabIndex = 16
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(96, 200)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(89, 12)
+        Me.Label15.TabIndex = 28
+        Me.Label15.Text = "テンプレ文章挿入"
         '
-        'Label8
+        'Label14
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(34, 96)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(29, 12)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "病名"
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(27, 200)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(36, 12)
+        Me.Label14.TabIndex = 27
+        Me.Label14.Text = "その他"
         '
-        'Label9
+        'btnReference
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.Red
-        Me.Label9.Location = New System.Drawing.Point(17, 114)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(65, 12)
-        Me.Label9.TabIndex = 18
-        Me.Label9.Text = "(枠に収めて)"
+        Me.btnReference.Location = New System.Drawing.Point(399, 85)
+        Me.btnReference.Name = "btnReference"
+        Me.btnReference.Size = New System.Drawing.Size(58, 23)
+        Me.btnReference.TabIndex = 26
+        Me.btnReference.Text = "参照"
+        Me.btnReference.UseVisualStyleBackColor = True
+        '
+        'formatTextBox
+        '
+        Me.formatTextBox.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.formatTextBox.Location = New System.Drawing.Point(286, 28)
+        Me.formatTextBox.Name = "formatTextBox"
+        Me.formatTextBox.Size = New System.Drawing.Size(106, 19)
+        Me.formatTextBox.TabIndex = 25
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(230, 31)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(53, 12)
+        Me.Label13.TabIndex = 24
+        Me.Label13.Text = "日付表記"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(195, 169)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(29, 12)
+        Me.Label12.TabIndex = 23
+        Me.Label12.Text = "状態"
+        '
+        'hyoukaBox
+        '
+        Me.hyoukaBox.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.hyoukaBox.Location = New System.Drawing.Point(226, 165)
+        Me.hyoukaBox.Name = "hyoukaBox"
+        Me.hyoukaBox.Size = New System.Drawing.Size(268, 19)
+        Me.hyoukaBox.TabIndex = 22
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(96, 169)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(51, 12)
+        Me.Label11.TabIndex = 21
+        Me.Label11.Text = "ADL得点"
+        '
+        'adlBox
+        '
+        Me.adlBox.ImeMode = System.Windows.Forms.ImeMode.Disable
+        Me.adlBox.Location = New System.Drawing.Point(149, 165)
+        Me.adlBox.MaxLength = 2
+        Me.adlBox.Name = "adlBox"
+        Me.adlBox.Size = New System.Drawing.Size(34, 19)
+        Me.adlBox.TabIndex = 20
+        Me.adlBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(5, 144)
+        Me.Label10.Location = New System.Drawing.Point(5, 169)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(87, 12)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "全身状態の評価"
         '
-        'adlBox
+        'Label9
         '
-        Me.adlBox.Location = New System.Drawing.Point(96, 141)
-        Me.adlBox.Name = "adlBox"
-        Me.adlBox.Size = New System.Drawing.Size(264, 19)
-        Me.adlBox.TabIndex = 20
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.Color.Red
+        Me.Label9.Location = New System.Drawing.Point(17, 139)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(65, 12)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "(枠に収めて)"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(34, 121)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(29, 12)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "病名"
+        '
+        'saveDirPathBox
+        '
+        Me.saveDirPathBox.Location = New System.Drawing.Point(96, 87)
+        Me.saveDirPathBox.Name = "saveDirPathBox"
+        Me.saveDirPathBox.ReadOnly = True
+        Me.saveDirPathBox.Size = New System.Drawing.Size(296, 19)
+        Me.saveDirPathBox.TabIndex = 16
+        '
+        'fileNameBox
+        '
+        Me.fileNameBox.Location = New System.Drawing.Point(96, 57)
+        Me.fileNameBox.Name = "fileNameBox"
+        Me.fileNameBox.Size = New System.Drawing.Size(128, 19)
+        Me.fileNameBox.TabIndex = 15
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(6, 90)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 12)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "保存先フォルダ"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(19, 60)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(51, 12)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "ファイル名"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(210, 200)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(42, 12)
+        Me.Label16.TabIndex = 29
+        Me.Label16.Text = "パターン"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(19, 31)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(53, 12)
+        Me.Label17.TabIndex = 15
+        Me.Label17.Text = "患者氏名"
+        '
+        'namBox
+        '
+        Me.namBox.ImeMode = System.Windows.Forms.ImeMode.Hiragana
+        Me.namBox.Location = New System.Drawing.Point(96, 28)
+        Me.namBox.Name = "namBox"
+        Me.namBox.Size = New System.Drawing.Size(87, 19)
+        Me.namBox.TabIndex = 26
+        '
+        'btnCreateExcelFile
+        '
+        Me.btnCreateExcelFile.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnCreateExcelFile.Location = New System.Drawing.Point(385, 282)
+        Me.btnCreateExcelFile.Name = "btnCreateExcelFile"
+        Me.btnCreateExcelFile.Size = New System.Drawing.Size(109, 47)
+        Me.btnCreateExcelFile.TabIndex = 32
+        Me.btnCreateExcelFile.Text = "エクセル作成"
+        Me.btnCreateExcelFile.UseVisualStyleBackColor = True
         '
         'TopForm
         '
@@ -319,5 +485,20 @@ Partial Class TopForm
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents adlBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents hyoukaBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents formatTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents btnReference As System.Windows.Forms.Button
+    Friend WithEvents tempNumBox As System.Windows.Forms.ComboBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents temp2Box As System.Windows.Forms.TextBox
+    Friend WithEvents temp1Box As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents namBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents btnCreateExcelFile As System.Windows.Forms.Button
 
 End Class
