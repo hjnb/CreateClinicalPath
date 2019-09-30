@@ -93,6 +93,13 @@ CreateClinicalPath
 	<param name="sender"></param>
 	<param name="e"></param>
 	<remarks></remarks>
+</member><member name="M:CreateClinicalPath.TopForm.btnDirOpen_Click(System.Object,System.EventArgs)">
+	<summary>
+ 保存先フォルダ開くボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
 </member><member name="M:CreateClinicalPath.Util.EnableDoubleBuffering(System.Windows.Forms.Control)">
 	<summary>
  コントロールのDoubleBufferedプロパティをTrueにする

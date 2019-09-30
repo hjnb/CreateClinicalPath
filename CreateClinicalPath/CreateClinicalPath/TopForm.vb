@@ -523,6 +523,31 @@ Public Class TopForm
         objWorkBook = Nothing
         objExcel = Nothing
 
-        MsgBox("作成しました。", MsgBoxStyle.Information)
+        MsgBox(createExcelFilePath1 & Environment.NewLine & "エクセルファイルを作成しました。", MsgBoxStyle.Information)
+    End Sub
+
+    Private Sub btnAddComma1_Click(sender As System.Object, e As System.EventArgs) Handles btnAddComma1.Click
+        byo1TextBox.Text &= "、"
+    End Sub
+
+    Private Sub btnAddComma2_Click(sender As System.Object, e As System.EventArgs) Handles btnAddComma2.Click
+        byo2TextBox.Text &= "、"
+    End Sub
+
+    ''' <summary>
+    ''' 保存先フォルダ開くボタンクリックイベント
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub btnDirOpen_Click(sender As System.Object, e As System.EventArgs) Handles btnDirOpen.Click
+        Dim saveDirPath As String = saveDirPathBox.Text
+        If Not Directory.Exists(saveDirPath) Then
+            MsgBox("正しい保存先フォルダを指定して下さい。", MsgBoxStyle.Exclamation)
+            fileNameBox.Focus()
+            Return
+        End If
+        System.Diagnostics.Process.Start(saveDirPathBox.Text)
+        Me.Close()
     End Sub
 End Class
