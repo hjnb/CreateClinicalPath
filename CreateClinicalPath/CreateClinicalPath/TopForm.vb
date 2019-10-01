@@ -234,9 +234,9 @@ Public Class TopForm
                 .Width = 85
             End With
             If dgvPatientList.Rows.Count <= 30 Then
-                dgvPatientList.Size = New Size(88, 542)
+                dgvPatientList.Size = New Size(88, 543)
             Else
-                dgvPatientList.Size = New Size(105, 542)
+                dgvPatientList.Size = New Size(105, 543)
             End If
         End With
     End Sub
