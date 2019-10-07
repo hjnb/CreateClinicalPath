@@ -473,6 +473,8 @@ Public Class TopForm
         Dim adl As String = adlBox.Text
         '状態
         Dim jyo As String = hyoukaBox.Text
+        '症状
+        Dim syo As String = If(jyo = KAKUTAN, "、頻回の喀痰吸引", "")
         'テンプレテキスト
         Dim temp1 As String = temp1Box.Text
         Dim temp2 As String = temp2Box.Text
@@ -500,6 +502,8 @@ Public Class TopForm
         '病名
         oSheet.Range("G13").Value = byo1
         oSheet.Range("G14").Value = byo2
+        '症状
+        oSheet.Range("G15").Value = syo
         '全身状態の評価
         'ADL得点
         oSheet.Range("G22").Value = "ADL" & adl
